@@ -1,4 +1,4 @@
-type Food = {
+export type Food = {
   name: string;
   image: string;
   price: number;
@@ -6,7 +6,7 @@ type Food = {
   tags: Array<FoodTag>;
 };
 
-type FoodTag =
+export type FoodTag =
   | "Breakfast"
   | "Lunch"
   | "Dinner"
@@ -17,7 +17,7 @@ type FoodTag =
   | "Vegetarian"
   | "Alcoholic";
 
-const foods: Array<Food> = [
+export const foods: Array<Food> = [
   {
     name: "Burger",
     image: "burger.jpg",
